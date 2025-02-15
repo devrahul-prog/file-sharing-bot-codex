@@ -8,25 +8,25 @@ from logging.handlers import RotatingFileHandler
 load_dotenv()
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "9876543210:SUBSCRIBETOMYYOUTUBECHANNELTECHMAGAZINE")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7262033268:AAHYLPelmFDf87GZt3FXznwfIQbeV2t1FDQ")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "1239871"))
+APP_ID = int(os.environ.get("APP_ID", "3701943"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "TM08ef3g440su098my3f746908188NE")
+API_HASH = os.environ.get("API_HASH", "bc09cd3d340bda295ca3f746958183f0")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", " -8214589072543"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001577126084 "))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "2716074337"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "1697185448"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://techm:magzineyoutube@cluster7.yogi7dfs.mongodb.net/?retryWrites=true&w=majority")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Yogiee7:wzTbLJaJ66cL0MmY@cluster7.yoz9kfs.mongodb.net/?retryWrites=true&w=majority")
 DB_NAME = os.environ.get("DATABASE_NAME", "Cluster7")
 
 #force sub channel id, if you want enable force sub
@@ -40,7 +40,7 @@ START_PIC = os.environ.get("START_PIC","")
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "").split()):
+    for x in (os.environ.get("ADMINS", "1697185448").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
